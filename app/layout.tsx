@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+
+      <body className={inter.className}>        
+        <nav>
+        <a href="/link1">Link 1</a>
+        <a href="/link2">Link 2</a>
+      </nav>
+      {children}
+      </body>
     </html>
   );
 }
